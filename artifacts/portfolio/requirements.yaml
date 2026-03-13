@@ -1,0 +1,18 @@
+packages:
+  "framer-motion": "For complex scroll animations, hero effects, and page transitions"
+  "jspdf": "For generating the downloadable CV PDF client-side"
+  "html2canvas": "For capturing a hidden React component to convert into a PDF via jspdf"
+  "clsx": "For merging tailwind classes conditionally"
+  "tailwind-merge": "For merging tailwind classes conditionally"
+
+images:
+  - path: "artifacts/portfolio/public/images/hero-bg.png"
+    description: "Abstract dark premium tech background with deep navy and electric cyan/teal glowing particle nodes, subtle grid, and soft light leaks, 8k resolution, highly detailed"
+    aspect_ratio: "16:9"
+  - path: "artifacts/portfolio/public/images/avatar.png"
+    description: "Stylized cyber-punk tech portrait illustration of a male developer, dark background with cyan glowing edge light, professional but futuristic, minimalist"
+    aspect_ratio: "1:1"
+
+notes:
+  - App is fully client-side and static for portfolio display
+  - PDF generation uses a hidden off-screen component and html2canvas/jspdf
