@@ -10,6 +10,7 @@ import { Certifications } from '@/components/sections/Certifications';
 import { Contact } from '@/components/sections/Contact';
 import { Footer } from '@/components/sections/Footer';
 import { CVTemplate } from '@/components/ui/CVTemplate';
+import { StarField } from '@/components/ui/StarField';
 import { generateAndDownloadCV } from '@/lib/downloadCV';
 import { useToast } from '@/hooks/use-toast';
 
@@ -29,8 +30,8 @@ export default function Home() {
     
     if (success) {
       toast({
-        title: "Success",
-        description: "CV downloaded successfully.",
+        title: "CV Downloaded!",
+        description: "Abel_B_Varughese_CV.pdf saved successfully.",
       });
     } else {
       toast({
@@ -43,10 +44,25 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen relative selection:bg-primary/30 selection:text-primary">
+    <div className="min-h-screen relative selection:bg-primary/30 selection:text-primary overflow-x-hidden">
+      {/* Persistent animated starfield */}
+      <StarField />
+
+      {/* Nebula background orbs — fixed, always visible */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div className="nebula-orb-cyan absolute -top-40 -left-40 w-[700px] h-[700px]" />
+        <div className="nebula-orb-violet absolute top-1/3 -right-60 w-[600px] h-[600px]" />
+        <div className="nebula-orb-gold absolute bottom-0 left-1/3 w-[500px] h-[500px]" />
+        <div className="nebula-orb-cyan absolute bottom-1/4 -left-40 w-[400px] h-[400px] opacity-40" />
+        <div className="nebula-orb-violet absolute -bottom-40 right-1/4 w-[450px] h-[450px] opacity-50" />
+      </div>
+
+      {/* Grid overlay */}
+      <div className="fixed inset-0 grid-pattern pointer-events-none z-0 opacity-25" />
+
       <Navbar />
       
-      <main>
+      <main className="relative z-10">
         <Hero onDownloadCV={handleDownloadCV} isDownloading={isDownloading} />
         <Stats />
         <About />
