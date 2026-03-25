@@ -106,19 +106,31 @@ export const PORTFOLIO_DATA = {
   ],
   certifications: [
     {
-      title: "ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM",
-      issuer: "Infosys",
-      date: "Aug 2025"
+      title: "ChatGPT-4 Prompt Engineering: Generative AI & LLMs",
+      issuer: "Infosys Springboard",
+      date: "Aug 2025",
+      description: "Comprehensive course on prompt engineering techniques for ChatGPT-4, covering Generative AI fundamentals, Large Language Model (LLM) architecture, and practical AI application development.",
+      skills: ["Prompt Engineering", "Generative AI", "LLMs", "ChatGPT", "AI Applications"],
+      color: "cyan",
+      viewLink: "https://drive.google.com/drive/u/0/home"
     },
     {
       title: "Placement Ace: Java Bootcamp",
       issuer: "Lovely Professional University",
-      date: "Jun 2025 – Jul 2025"
+      date: "Jun 2025 – Jul 2025",
+      description: "Intensive Java bootcamp designed for placement preparation, covering core Java, OOP principles, data structures, algorithms, and interview problem-solving techniques.",
+      skills: ["Java", "OOPs", "Data Structures", "Algorithms", "Problem Solving"],
+      color: "violet",
+      viewLink: "https://drive.google.com/drive/u/0/home"
     },
     {
       title: "NPTEL — Deep Learning",
-      issuer: "NPTEL",
-      date: "Jan 2025 – Jul 2025"
+      issuer: "NPTEL (IIT)",
+      date: "Jan 2025 – Jul 2025",
+      description: "6-month NPTEL course on Deep Learning offered by IIT professors, covering neural networks, CNNs, RNNs, backpropagation, and modern deep learning architectures.",
+      skills: ["Deep Learning", "Neural Networks", "CNNs", "RNNs", "TensorFlow"],
+      color: "amber",
+      viewLink: "https://drive.google.com/drive/u/0/home"
     }
   ],
   education: [
