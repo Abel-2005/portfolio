@@ -80,7 +80,7 @@ export function Hero({ onDownloadCV, isDownloading }: HeroProps) {
             transition={{ duration: 0.5, delay: 0.35 }}
             className="text-muted-foreground text-base md:text-lg mb-10 max-w-xl leading-relaxed"
           >
-            CS Engineering student @ LPU · CGPA 8.66 · Building intelligent systems that matter
+            CS Engineering student @ LPU · Building intelligent systems that matter
           </motion.p>
 
           {/* CTAs */}
