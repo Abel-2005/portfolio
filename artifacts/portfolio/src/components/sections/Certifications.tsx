@@ -97,13 +97,13 @@ function CertModal({ cert, onClose }: { cert: Cert; onClose: () => void }) {
 
             {/* CTA */}
             <a
-              href={cert.viewLink}
+              href={`${import.meta.env.BASE_URL}${cert.viewLink}`}
               target="_blank"
               rel="noreferrer"
               className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:-translate-y-0.5 ${c.iconBg} ${c.icon} border ${c.border} hover:brightness-125`}
             >
               <ExternalLink className="w-4 h-4" />
-              View Certificate on Google Drive
+              View Certificate
             </a>
           </div>
         </motion.div>

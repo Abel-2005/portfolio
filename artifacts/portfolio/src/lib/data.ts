@@ -12,7 +12,7 @@ export const PORTFOLIO_DATA = {
   stats: [
     { label: "Projects", value: 6 },
     { label: "Internships", value: 1 },
-    { label: "Certifications", value: 3 },
+    { label: "Certifications", value: 5 },
     { label: "CGPA", value: 8.66, isDecimal: true }
   ],
   skills: {
@@ -106,31 +106,49 @@ export const PORTFOLIO_DATA = {
   ],
   certifications: [
     {
-      title: "ChatGPT-4 Prompt Engineering: Generative AI & LLMs",
+      title: "ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI & LLM",
+      issuer: "Infosys Springboard (Wingspan)",
+      date: "Aug 29, 2025",
+      description: "Comprehensive course on prompt engineering techniques for ChatGPT-4, covering Generative AI fundamentals, Large Language Model (LLM) architecture, and practical AI application development with hands-on exercises.",
+      skills: ["Prompt Engineering", "Generative AI", "LLMs", "ChatGPT-4", "AI Applications"],
+      color: "cyan",
+      viewLink: "cert_chatgpt.pdf"
+    },
+    {
+      title: "Build Generative AI Apps with No-Code Tools",
+      issuer: "Infosys Springboard (Wingspan)",
+      date: "Aug 31, 2025",
+      description: "Learned to build and deploy Generative AI applications using no-code platforms, covering AI workflows, prompt design, and practical deployment of AI-powered solutions without traditional coding.",
+      skills: ["Generative AI", "No-Code", "AI Workflows", "App Development", "LLMs"],
+      color: "violet",
+      viewLink: "cert_nocode_tools.pdf"
+    },
+    {
+      title: "Generative AI Fundamentals",
       issuer: "Infosys Springboard",
       date: "Aug 2025",
-      description: "Comprehensive course on prompt engineering techniques for ChatGPT-4, covering Generative AI fundamentals, Large Language Model (LLM) architecture, and practical AI application development.",
-      skills: ["Prompt Engineering", "Generative AI", "LLMs", "ChatGPT", "AI Applications"],
-      color: "cyan",
-      viewLink: "https://drive.google.com/drive/u/0/home"
-    },
-    {
-      title: "Placement Ace: Java Bootcamp",
-      issuer: "Lovely Professional University",
-      date: "Jun 2025 – Jul 2025",
-      description: "Intensive Java bootcamp designed for placement preparation, covering core Java, OOP principles, data structures, algorithms, and interview problem-solving techniques.",
-      skills: ["Java", "OOPs", "Data Structures", "Algorithms", "Problem Solving"],
-      color: "violet",
-      viewLink: "https://drive.google.com/drive/u/0/home"
-    },
-    {
-      title: "NPTEL — Deep Learning",
-      issuer: "NPTEL (IIT)",
-      date: "Jan 2025 – Jul 2025",
-      description: "6-month NPTEL course on Deep Learning offered by IIT professors, covering neural networks, CNNs, RNNs, backpropagation, and modern deep learning architectures.",
-      skills: ["Deep Learning", "Neural Networks", "CNNs", "RNNs", "TensorFlow"],
+      description: "Foundation course covering core Generative AI concepts, transformer architectures, diffusion models, and practical applications of modern AI across industries.",
+      skills: ["Generative AI", "Transformers", "Diffusion Models", "AI Ethics", "Practical AI"],
       color: "amber",
-      viewLink: "https://drive.google.com/drive/u/0/home"
+      viewLink: "cert_generative_ai.pdf"
+    },
+    {
+      title: "Computational Theory: Language Principles & Finite Automata",
+      issuer: "Infosys Springboard (Wingspan)",
+      date: "Aug 29, 2025",
+      description: "Deep dive into computational theory covering formal language principles, finite automata, regular expressions, context-free grammars, and Turing machines — core foundations of computer science.",
+      skills: ["Finite Automata", "Formal Languages", "Regular Expressions", "Context-Free Grammar", "Theory of Computation"],
+      color: "cyan",
+      viewLink: "cert_computational_theory.pdf"
+    },
+    {
+      title: "Data Science Internship",
+      issuer: "Jyesta Corporate Entity",
+      date: "Jul 2025 – Sep 2025",
+      description: "Certificate of completion for the Data Science internship, recognizing contributions to data preprocessing, feature engineering, ML experimentation, and similarity-based model evaluation.",
+      skills: ["Python", "Machine Learning", "Data Preprocessing", "Feature Engineering", "Scikit-learn"],
+      color: "violet",
+      viewLink: "cert_summer_intern.pdf"
     }
   ],
   education: [
